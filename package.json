@@ -2,6 +2,29 @@
   "name": "antrian-kita",
   "version": "0.1.0",
   "private": true,
+  "description": "Sistem antrean cerdas & real-time untuk UMKM Indonesia. Dibuat dengan Next.js 15, Tailwind v4, Drizzle ORM, & PostgreSQL.",
+  "homepage": "https://github.com/nichsedge/ngantriwoy#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichsedge/ngantriwoy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nichsedge/ngantriwoy/issues"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "tailwind-css",
+    "drizzle-orm",
+    "postgresql",
+    "queue-management",
+    "realtime",
+    "umkm",
+    "indonesia",
+    "bun",
+    "typescript",
+    "motion"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
