@@ -1,0 +1,107 @@
+export const locales = {
+  id: {
+    common: {
+      app_name: 'ANTRIAN KITA',
+      tagline: 'Sistem antrean cerdas untuk UMKM Indonesia',
+      back_to_home: '← Kembali ke Beranda',
+      loading: 'Memuat...',
+      cancel: 'Batal',
+      save: 'Simpan',
+      close: 'Tutup',
+      today: 'Hari Ini',
+      avg: 'Rata-rata',
+      minutes: 'Menit',
+      people: 'Orang',
+      public_page: 'Halaman Publik',
+      open_monitor: 'Buka Layar Antrean',
+    },
+    landing: {
+      title_1: 'Antrian',
+      title_2: 'Kita',
+      subtitle: 'Kelola antrean toko Anda dengan elegan, cepat, dan mudah.',
+      future_tag: 'Antrean Masa Depan',
+      shop_code_placeholder: 'KODE TOKO (6 KARAKTER)',
+      join_button: 'MASUK ANTREAN',
+      owner_title: 'SAYA PEMILIK',
+      owner_desc: 'Kelola toko, panggil antrean, dan pantau statistik lewat HP Anda.',
+      owner_cta: 'Buka Panel Kontrol',
+      customer_title: 'SAYA PELANGGAN',
+      customer_desc: 'Cek status antrean Anda secara live tanpa harus menunggu di tempat.',
+      customer_cta: 'Masuk Akun',
+      footer_made_for: 'Dibuat untuk Indonesia',
+      footer_mode: 'Solo Hustle Mode',
+    },
+    admin_dashboard: {
+      panel_title: 'Panel Pengelola',
+      shop_list_title: 'Daftar Toko',
+      open_control: 'Buka Kontrol Antrean',
+      shop_code: 'Kode Toko',
+      scan_to_queue: 'Scan untuk Antre',
+      start_now: 'Mulai Sekarang',
+      onboarding_desc: 'Hanya butuh nama toko untuk mulai mengelola antrean live Anda.',
+      create_first_shop: 'Buat Toko Pertama',
+      new_shop_title: 'Toko Baru',
+      new_shop_desc: 'Beri nama untuk toko Anda',
+      new_shop_placeholder: 'Contoh: Barbershop Al',
+    },
+    solo_admin: {
+      title: 'ADMIN SOLO',
+      live_control: 'Kontrol Langsung',
+      announcing: 'Memanggil...',
+      waiting_action: 'Menunggu Aksi',
+      tickets: 'Tiket',
+      served: 'Selesai',
+      now_serving: 'Sedang Dilayani',
+      call_next: 'Panggil Antrean',
+      skip: 'Lewati',
+      reset_day: 'Reset Hari',
+      manual_entry: 'Input Manual',
+      add_walk_in: 'Tambah pelanggan manual',
+      waiting_list: 'Menunggu',
+      serving_list: 'Dilayani',
+      queue_tab: 'Antrean',
+      queue_desc: 'Daftar Tunggu Pelanggan',
+      no_one_waiting: 'Tidak ada antrean',
+      history_tab: 'Riwayat',
+      history_desc: 'Aktivitas Terakhir',
+      home_tab: 'Utama',
+      note_label: 'Catatan Pesanan',
+    },
+    kiosk: {
+      title_1: 'Ambil',
+      title_2: 'Tiket',
+      subtitle: 'Sentuh tombol di bawah untuk mendapatkan nomor antrean Anda.',
+      note_placeholder: 'Contoh: 1 Ayam Dada, Sambal dipisah...',
+      note_label: 'Catatan Pesanan (Opsional)',
+      take_button: 'Ambil Tiket',
+      touch_here: 'Sentuh Disini',
+      your_number: 'Nomor Antrean Anda',
+      save_wa: 'SIMPAN KE WHATSAPP',
+      wa_remind: 'Simpan ke WhatsApp agar tidak lupa nomor antrean Anda.',
+    },
+    display: {
+      live_monitor: 'Pantau Antrean Live',
+      now_calling: 'Sedang Dipanggil',
+      remaining: 'Sisa Antrean',
+      estimate: 'Estimasi',
+      wait_around: 'Silakan tunggu di area sekitar',
+    },
+    login: {
+      identity: 'Identitas',
+      welcome_owner: 'Selamat Datang, Pemilik',
+      login_prompt: 'Masuk ke akun Anda',
+      login_as: 'Masuk sebagai',
+      dev_login: 'Masuk Pengembang',
+      google_login: 'Masuk dengan Google',
+    }
+  },
+  en: {
+    // We can add English later easily
+  }
+};
+
+export type Locale = typeof locales.id;
+export type T = keyof Locale;
+
+// Simple helper to get locale (could be expanded to use cookie/localStorage)
+export const getDictionary = (lang: 'id' | 'en' = 'id') => locales[lang] || locales.id;

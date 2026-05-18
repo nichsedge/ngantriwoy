@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:latest # Assuming this is 18.x
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      # REQUIRED for 18+: Point to the version-specific subdirectory
+      PGDATA: /var/lib/postgresql/18/docker
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    volumes:
+      # Mount to the parent directory as per the new V18 spec
+      - postgres_data:/var/lib/postgresql
+
+volumes:
+  postgres_data:

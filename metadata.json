@@ -1,0 +1,8 @@
+{
+  "name": "Antrian Kita",
+  "description": "Sistem antrean cerdas untuk UMKM Indonesia dengan Google Login dan database Cloud SQL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
